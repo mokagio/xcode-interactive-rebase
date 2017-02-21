@@ -1,9 +1,6 @@
-//
-//  APIService.swift
-//  InteractiveRebaseExample
-//
-//  Created by Giovanni on 22/2/17.
-//  Copyright © 2017 mokacoding. All rights reserved.
-//
+struct First {
 
-import Foundation
+    var value: Int {
+        return 1
+    }
+}
