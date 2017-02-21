@@ -7,4 +7,6 @@ struct Second {
     func number(for string: String) -> Int {
         return 42
     }
+
+    func useless() { }
 }
