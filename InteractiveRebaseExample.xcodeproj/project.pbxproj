@@ -12,9 +12,9 @@
 		3F60BDFA1E5CE88600CBEE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F60BDF81E5CE88600CBEE2C /* Main.storyboard */; };
 		3F60BDFC1E5CE88600CBEE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F60BDFB1E5CE88600CBEE2C /* Assets.xcassets */; };
 		3F60BDFF1E5CE88600CBEE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F60BDFD1E5CE88600CBEE2C /* LaunchScreen.storyboard */; };
-		3F60BE0A1E5CE88600CBEE2C /* InteractiveRebaseExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F60BE091E5CE88600CBEE2C /* InteractiveRebaseExampleTests.swift */; };
 		3F60BE151E5CEB0E00CBEE2C /* First.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F60BE141E5CEB0E00CBEE2C /* First.swift */; };
 		3F60BE171E5CF31900CBEE2C /* Second.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F60BE161E5CF31900CBEE2C /* Second.swift */; };
+		3F60BE191E5CF36400CBEE2C /* FirstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F60BE181E5CF36400CBEE2C /* FirstTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +36,10 @@
 		3F60BDFE1E5CE88600CBEE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F60BE001E5CE88600CBEE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F60BE051E5CE88600CBEE2C /* InteractiveRebaseExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InteractiveRebaseExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F60BE091E5CE88600CBEE2C /* InteractiveRebaseExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveRebaseExampleTests.swift; sourceTree = "<group>"; };
 		3F60BE0B1E5CE88600CBEE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F60BE141E5CEB0E00CBEE2C /* First.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = First.swift; sourceTree = "<group>"; };
 		3F60BE161E5CF31900CBEE2C /* Second.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Second.swift; sourceTree = "<group>"; };
+		3F60BE181E5CF36400CBEE2C /* FirstTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +96,8 @@
 		3F60BE081E5CE88600CBEE2C /* InteractiveRebaseExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				3F60BE091E5CE88600CBEE2C /* InteractiveRebaseExampleTests.swift */,
 				3F60BE0B1E5CE88600CBEE2C /* Info.plist */,
+				3F60BE181E5CF36400CBEE2C /* FirstTests.swift */,
 			);
 			path = InteractiveRebaseExampleTests;
 			sourceTree = "<group>";
@@ -158,6 +158,7 @@
 					3F60BE041E5CE88600CBEE2C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 63EWLY2W55;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3F60BDF01E5CE88600CBEE2C;
 					};
@@ -218,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F60BE0A1E5CE88600CBEE2C /* InteractiveRebaseExampleTests.swift in Sources */,
+				3F60BE191E5CF36400CBEE2C /* FirstTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,11 +377,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 63EWLY2W55;
 				INFOPLIST_FILE = InteractiveRebaseExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mokacoding.InteractiveRebaseExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InteractiveRebaseExample.app/InteractiveRebaseExample";
 			};
@@ -391,6 +394,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 63EWLY2W55;
 				INFOPLIST_FILE = InteractiveRebaseExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

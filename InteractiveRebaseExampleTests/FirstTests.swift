@@ -1,6 +1,6 @@
 //
-//  InteractiveRebaseExampleTests.swift
-//  InteractiveRebaseExampleTests
+//  FirstTests.swift
+//  InteractiveRebaseExample
 //
 //  Created by Giovanni on 22/2/17.
 //  Copyright © 2017 mokacoding. All rights reserved.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import InteractiveRebaseExample
 
-class InteractiveRebaseExampleTests: XCTestCase {
+class FirstTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -32,5 +32,8 @@ class InteractiveRebaseExampleTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
+
+    func testFirstValue() {
+        XCTAssertEqual(First().value, 2)
+    }
 }
