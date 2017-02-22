@@ -34,6 +34,6 @@ class FirstTests: XCTestCase {
     }
 
     func testFirstValue() {
-        XCTAssertEqual(First().value, 2)
+        XCTAssertEqual(First().value, 1)
     }
 }
